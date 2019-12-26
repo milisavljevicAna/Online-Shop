@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Istok+Web:400,700&display=swap&subset=latin-ext");
+body {
+  font-family: 'Istok Web', sans-serif;
+  background-color: #eee;
+  color: #333;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+a, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  outline: none; }
+
+a {
+  color: #666; }
+  a:hover {
+    color: #000; }
+
+.main-header .top-bar {
+  padding: 10px 0; }
+  .main-header .top-bar a {
+    font-size: 14px;
+    color: #333; }
+    .main-header .top-bar a:hover {
+      color: #000; }
+  .main-header .top-bar .phone-info {
+    float: left; }
+  .main-header .top-bar .login {
+    float: right;
+    text-transform: uppercase; }
+.main-header .navbar {
+  background-color: #fff;
+  margin-bottom: 0;
+  border: none; }
+  .main-header .navbar .navbar-toggle {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none; }
+    .main-header .navbar .navbar-toggle .icon-bar {
+      width: 20px;
+      height: 4px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      background-color: #000; }
+      .main-header .navbar .navbar-toggle .icon-bar + .icon-bar {
+        margin-top: 2px; }
+  .main-header .navbar > .container {
+    position: relative; }
+.main-header .logo {
+  width: 58px;
+  margin-top: 17px;
+  margin-bottom: 0;
+  float: left; }
+.main-header .search-cart-holder {
+  position: absolute;
+  top: 14px;
+  right: 23px; }
+  .main-header .search-cart-holder .search, .main-header .search-cart-holder .cart {
+    display: inline-block; }
+  .main-header .search-cart-holder .search {
+    position: relative;
+    margin-right: 10px; }
+    .main-header .search-cart-holder .search .form-control {
+      display: block;
+      width: 140px;
+      height: 24px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding-right: 20px;
+      padding-top: 3px;
+      padding-left: 4px; }
+      .main-header .search-cart-holder .search .form-control:focus {
+        border-bottom-color: #000; }
+    .main-header .search-cart-holder .search .btn {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background-image: url("../img/search-icon.png");
+      background-repeat: no-repeat;
+      display: block;
+      width: 17px;
+      height: 18px;
+      padding: 0;
+      border: none;
+      background-color: transparent; }
+      .main-header .search-cart-holder .search .btn:focus {
+        outline: none; }
+      .main-header .search-cart-holder .search .btn:active {
+        box-shadow: none; }
+  .main-header .search-cart-holder .cart {
+    position: relative; }
+    .main-header .search-cart-holder .cart .badge {
+      position: absolute;
+      padding: 4px 6px 3px;
+      background-color: #cc0000;
+      right: -8px;
+      bottom: -8px; }
+.main-header .nav {
+  padding-bottom: 5px; }
+  .main-header .nav li {
+    text-align: center; }
+    .main-header .nav li a {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      text-transform: uppercase;
+      display: inline-block; }
+      .main-header .nav li a:hover, .main-header .nav li a:focus {
+        background-color: transparent;
+        border-bottom-color: #acdacf; }
+  .main-header .nav .active a {
+    border-bottom-color: #acdacf; }
+
+@media (min-width: 768px) {
+  .main-header .top-bar a {
+    font-size: 16px; }
+  .main-header .logo {
+    width: 80px;
+    margin-top: 10px; }
+  .main-header .nav {
+    padding-bottom: 0; }
+    .main-header .nav li:not(:last-child) {
+      margin-right: 30px; }
+  .main-header .navbar {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  .main-header .search-cart-holder {
+    top: -30px; } }
+@media (min-width: 992px) {
+  .main-header .nav {
+    padding-right: 190px; }
+    .main-header .nav li:last-child {
+      margin-right: 30px; }
+  .main-header .search-cart-holder {
+    top: 10px; } }
+@media (min-width: 1200px) {
+  .main-header .logo {
+    width: 104px; } }
+.intro-header {
+  position: relative;
+  margin-bottom: 40px; }
+  .intro-header h2 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+    .intro-header h2::before, .intro-header h2::after {
+      display: none; }
+    .intro-header h2 span {
+      font-size: 70px;
+      color: #ffce67;
+      display: block; }
+  .intro-header #intro-slider {
+    display: none; }
+
+.frame {
+  position: relative; }
+  .frame::before, .frame::after {
+    content: " ";
+    position: absolute;
+    width: 130px;
+    height: 60px;
+    display: block;
+    border: 3px solid #fff; }
+  .frame::before {
+    border-bottom: none;
+    border-right: none;
+    top: 10px;
+    left: 10px; }
+  .frame::after {
+    border-top: none;
+    border-left: none;
+    right: 10px;
+    bottom: 10px; }
+
+#intro-slider .carousel-control {
+  background-image: none;
+  opacity: 1; }
+#intro-slider .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  margin: 0; }
+#intro-slider .arrow-left, #intro-slider .arrow-right {
+  width: 26px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+#intro-slider .arrow-left {
+  background-image: url("../img/arrow-left.png");
+  left: 20%; }
+#intro-slider .arrow-right {
+  background-image: url("../img/arrow-right.png");
+  right: 20%; }
+
+@media (min-width: 768px) {
+  .intro-header > img {
+    display: none; }
+  .intro-header #intro-slider {
+    display: block; }
+    .intro-header #intro-slider .carousel-indicators {
+      bottom: 0px; }
+  .intro-header h2 {
+    padding: 30px 0;
+    width: 620px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .intro-header h2::before, .intro-header h2::after {
+      display: block; } }
+@media (min-width: 1200px) {
+  .intro-header {
+    margin-bottom: 70px; }
+    .intro-header h2 {
+      font-size: 30px; }
+      .intro-header h2 span {
+        font-size: 96px; }
+    .intro-header #intro-slider .carousel-indicators {
+      bottom: 10px; } }
+
+/*# sourceMappingURL=main.css.map */
